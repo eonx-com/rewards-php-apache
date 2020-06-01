@@ -19,6 +19,7 @@ RUN docker-php-ext-configure pdo_mysql \
         --with-jpeg-dir=/usr/include/ \
         --with-png-dir=/usr/include/; \
     docker-php-ext-install \
+      bcmath \
       gd \
       intl \
       mbstring \
