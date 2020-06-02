@@ -59,5 +59,8 @@ RUN apt-get update && \
 
 RUN pip3 --no-cache-dir install --upgrade awscli
 
+COPY crocker /opt/crocker
+RUN chmod a+x /opt/crocker
+
 WORKDIR /var/www
 
